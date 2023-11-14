@@ -14,7 +14,7 @@ public class Exercicio1Lista {
         Scanner leitorTexto = new Scanner(System.in);
 
         int numero, qtdPositivos = 0 , qtdNegativos = 0;
-        double percNegativos, percPositivos, soma = 0;
+        double percNegativos, percPositivos, soma = 0, media;
         String continuar;
         do{
             System.out.println("Digite um número: ");
@@ -30,6 +30,11 @@ public class Exercicio1Lista {
             continuar = leitorTexto.nextLine();
         }while (continuar.equalsIgnoreCase("s"));
         //Media e os percentuais fora do laço
+        media = soma / (qtdNegativos + qtdPositivos);
+        System.out.println("A média é: " + media);
+        System.out.println("\nA quantidade de números positivos digitados foi: " + qtdPositivos
+                        + "\nA quantidade de números negativos digitados foi: " + qtdNegativos);
+
 
     }
 }
