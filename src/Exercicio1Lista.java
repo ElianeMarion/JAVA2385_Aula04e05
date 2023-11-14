@@ -35,6 +35,10 @@ public class Exercicio1Lista {
         System.out.println("\nA quantidade de números positivos digitados foi: " + qtdPositivos
                         + "\nA quantidade de números negativos digitados foi: " + qtdNegativos);
 
-
+        //percentual de valores negativos e positivos
+        percPositivos = (qtdPositivos * 100) / (qtdPositivos + qtdNegativos);
+        percNegativos = (qtdNegativos * 100) / (qtdPositivos + qtdNegativos);
+        System.out.println("\nPercentual de números positivos digitados foi: " + percPositivos
+                           +"\nPercentual de números positivos digitados foi: " + percNegativos);
     }
 }
